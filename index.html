@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+     Name: Nate Gibson
+     Date: 10/14/18
+     Section: CSE 154 Section AL
+
+     This is my index.html page which includes Today and Remember planner sections, and a helpful
+     links section which links to google calendar, a pomordo timer, and a book on amazon.
+-->
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Today's Plan</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="deerlake.jpg" alt="An image of a lake and mountains">
+      <h1>Organize to Optimize</h1>
+    </header>
+    <main>
+      <div id="lists">
+        <section>
+          <h2>Today</h2>
+          <div>
+            <button id="add-plan-btn">Add Plan</button>
+            <button id="add-rand-plan-btn">Add Random Plan</button>
+            <button id="remove-last-plan-btn">Remove Last</button>
+            <button id="clear-plans-btn">Clear</button>
+          </div>
+          <p id="plan-error" class="error"></p>
+          <div id="plans"></div>
+        </section>
+        <section>
+          <h2>Remember</h2>
+          <div>
+            <button id="add-task-btn">Add Task</button>
+            <button id="add-rand-task-btn">Add Random Task</button>
+            <button id="remove-last-task-btn">Remove Last</button>
+            <button id="clear-tasks-btn">Clear</button>
+          </div>
+          <p id="task-error" class="error"></p>
+          <div>
+            <ol id="tasks">
+              <li><input placeholder="your task"></li>
+            </ol>
+          </div>
+        </section>
+      </div>
+      <div id="info">
+        <section>
+          <h2>Helpful Links:</h2>
+          <nav>
+            <ul>
+              <li><a href="https://calendar.google.com" target="_blank">google calendar</a></li>
+              <li><a href="http://www.online-timers.com/pomodoro-timers" target="_blank">
+                    pomodoro timer</a>
+              </li>
+              <li><a href="https://www.amazon.com/How-Become-Straight-Student-Unconventional/dp/0767922719"
+                    target="_blank">organization scheme inspired by this book</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <section id="weather">
+          <h2>Current Weather:</h2>
+          <div>
+            <p>For</p>
+            <input id="zip" placeholder="zipcode">
+            <button id="get-weather-btn">Get Weather</button>
+          </div>
+          <p id="weather-error" class="error"></p>
+          <article id="weather-info"></article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
